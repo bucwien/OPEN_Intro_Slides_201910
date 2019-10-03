@@ -39,19 +39,30 @@ output:
   * Vertiefte Suche über Facettenfilter
 * Suche nach U-Sätzen in MBW:
   * Briefmarkenbeispiel: Michel Übersee - Bd. 9.2 Japan
-  * Workaround auf [QM](https://openm13.wien.gv.at) implementiert (MBW-Titel wird als Reihentitel indexiert)
+  * Workaround auf [QM](https://openm13.wien.gv.at/Mediensuche/Einfache-Suche?search=Michel+%C3%9Cbersee+Japan) implementiert (MBW-Titel wird als Reihentitel indexiert)
 
 ### Bekannte Probleme #2
 
-* Anmeldung auf Startseite - "kein Respond"
 * Schlagwortfolgen: Verweisformen werden angezeigt
+* Barrierefreiheit
 
 ### Geplante Korrekturen
 
 * Systematik-Register
 * Verlinkung der Standort-Angaben
-* Sprachen-Facette (Datenbereinigung)
-* Sys-/IKA-Facette (aufwändige Datenbereinigung nötig)
+* **!! Metadaten-Korrekturen !!**
+  * Sprachen-Facette (Datenbereinigung)
+  * Sys-/IKA-Facette (aufwändige Datenbereinigung nötig)
+  * Schlagwortregister bereinigen (GND-Verlinkung herstellen)
+
+### Träume möglich
+
+* Erweiterte Suche selbst aufbauen 
+  * Semantische Suche erlauben ([Siehe](https://nbn-resolving.org/urn:nbn:de:0290-opus4-162355))
+* Dynamische Medienvorschläge (Festtage, Jubiläen, aktuelle Ereignisse)
+* Kuratierte Liste einbetten (zB dynamische Liste an Literaturpreis-TrägerInnen)
+* Zeitschriftenartikel indexieren
+* *...und?*
 
 ### Error Reporting
 
