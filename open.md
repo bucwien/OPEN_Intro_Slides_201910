@@ -68,3 +68,20 @@ output:
 
 * [Buchwiki SoftwareTracking](https://www.intern.magwien.gv.at/buchwiki/user/bin/view/Tasks/SoWaTHome?Software=Teststellung%20Open&Version=7.0&Alle=ja)
 * [GitHub](https://github.com/bucwien)
+
+### Outcomes Besprechung 03.10.2019
+
+* Systematik-Notationen in `DefaultSearchField` kopieren
+* Erscheinungsjahr in `DefaultSearchField` kopieren
+
+* **OCLC** melden:
+  * Phrasensuche
+
+siehe [https://github.com/buechereien-wien/OPEN_Intro_Slides_201910/issues/8]
+
+### Frage/Anregung
+
+Kollaborative Entwicklung von Beispielen oder Unterlagen zur Katalog-Recherche in OPEN
+
+* Buchwiki
+* oder auf GitHub als Slide-Show (wie diese hier) und gleichzeitig als [OER](https://de.wikipedia.org/wiki/Open_Educational_Resources) veröffentlichen?
