@@ -71,13 +71,13 @@ output:
 
 ### Outcomes Besprechung 03.10.2019
 
+[Dokumentiert](https://github.com/buechereien-wien/OPEN_Intro_Slides_201910/issues/8)
+
 * Systematik-Notationen in `DefaultSearchField` kopieren
 * Erscheinungsjahr in `DefaultSearchField` kopieren
 
-* **OCLC** melden:
+* Bei **OCLC** melden:
   * Phrasensuche
-
-siehe [https://github.com/buechereien-wien/OPEN_Intro_Slides_201910/issues/8]
 
 ### Frage/Anregung
 
