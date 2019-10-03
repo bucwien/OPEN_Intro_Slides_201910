@@ -2,7 +2,7 @@
 author: Christian Erlinger
 title: OPEN
 subtitle:  Der Online-Katalog der Büchereien Wien
-date: Oktober 2019
+date: 2019-10-03
 output:
   revealjs::revealjs_presentation:
     theme: sky
@@ -32,13 +32,17 @@ output:
   * Medienmerkliste, Suchen speicherbar
   * Direkte Vormerkung am spezifischen Exemplar
 
-### Bekannte Probleme
+### Bekannte Probleme #1
 
 * Erweiterte Suche: Systematik/IKA (deaktiviert)
-  * Workaround über Systematiklink [buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC|SystematicLink|AND|2|Notation](https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC%7cSystematicLink%7cAnd%7c2%7cPL.MU) und Facettenfilter:
+  * Workaround über Systematiklink [buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC|SystematicLink|AND|2|Notation](https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC%7cSystematicLink%7cAnd%7c2%7cPL.MU)
+  * Vertiefte Suche über Facettenfilter
 * Suche nach U-Sätzen in MBW:
   * Briefmarkenbeispiel: Michel Übersee - Bd. 9.2 Japan
   * Workaround auf [QM](https://openm13.wien.gv.at) implementiert (MBW-Titel wird als Reihentitel indexiert)
+
+### Bekannte Probleme #2
+
 * Anmeldung auf Startseite - "kein Respond"
 * Schlagwortfolgen: Verweisformen werden angezeigt
 
