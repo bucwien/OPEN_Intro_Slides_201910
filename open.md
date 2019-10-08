@@ -2,7 +2,7 @@
 author: Christian Erlinger
 title: OPEN
 subtitle:  Der Online-Katalog der Büchereien Wien
-date: 2019-10-03
+date: 2019-10-08
 output:
   revealjs::revealjs_presentation:
     theme: sky
@@ -15,8 +15,8 @@ output:
 ### Neuerungen
 * Zeitgemäße Web-Technologie (Neuer Server, neue Software)
   * Responsives Design des Online-Kataloges
-  * OPEN läuft in einem Open-Source CMS und kann somit eingeschränkt selbständig ergänzt werden.
-  * Erlaubt Integration von externen Inhalten
+* Integration der Website
+  * OPEN läuft in einem Open-Source CMS und kann somit (tlw.) ergänzt werden.
 * Bessere Integration Inhalte von Drittanbietern:
   * Verfügbarkeitsanzeige bei E-Medien der Onleihe (theoretisch)
   * Cover-Abbildungen
@@ -48,6 +48,7 @@ output:
 
 ### Geplante Korrekturen
 
+* Stichwortsuche ergänzen um Jahr und Systematik
 * Systematik-Register
 * Verlinkung der Standort-Angaben
 * **!! Metadaten-Korrekturen !!**
