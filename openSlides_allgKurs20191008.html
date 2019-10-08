@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Christian Erlinger">
+  <meta name="dcterms.date" content="2019-10-08">
+  <title>OPEN</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reset.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">OPEN</h1>
+  <p class="subtitle">Der Online-Katalog der Büchereien Wien</p>
+  <p class="author">Christian Erlinger</p>
+  <p class="date">2019-10-08</p>
+</section>
+
+<section id="systemarchitektur-open" class="slide level3">
+<h3>Systemarchitektur OPEN</h3>
+<p><img data-src="open_sysarch.png" /></p>
+</section>
+<section id="neuerungen" class="slide level3">
+<h3>Neuerungen</h3>
+<ul>
+<li class="fragment">Zeitgemäße Web-Technologie (Neuer Server, neue Software)
+<ul>
+<li class="fragment">Responsives Design des Online-Kataloges</li>
+</ul></li>
+<li class="fragment">Integration der Website
+<ul>
+<li class="fragment">OPEN läuft in einem Open-Source CMS und kann somit (tlw.) ergänzt werden.</li>
+</ul></li>
+<li class="fragment">Bessere Integration Inhalte von Drittanbietern:
+<ul>
+<li class="fragment">Verfügbarkeitsanzeige bei E-Medien der Onleihe (theoretisch)</li>
+<li class="fragment">Cover-Abbildungen</li>
+</ul></li>
+</ul>
+</section>
+<section id="neuerungen---suche" class="slide level3">
+<h3>Neuerungen - Suche</h3>
+<ul>
+<li class="fragment">Suche in Solr-Index anstatt direkt in der Datenbank
+<ul>
+<li class="fragment">Autovervollständigung während der Suchbegriffseingabe</li>
+<li class="fragment">Facettierung und Filterung der Suchergebnisse</li>
+<li class="fragment">„Meinten Sie“-Vorschlag</li>
+<li class="fragment">Suche schneller als in relationaler Datenbank</li>
+</ul></li>
+<li class="fragment">Features für BenutzerInnen:
+<ul>
+<li class="fragment">Medienmerkliste, Suchen speicherbar</li>
+<li class="fragment">Direkte Vormerkung am spezifischen Exemplar</li>
+</ul></li>
+</ul>
+</section>
+<section id="bekannte-probleme-1" class="slide level3">
+<h3>Bekannte Probleme #1</h3>
+<ul>
+<li class="fragment">Erweiterte Suche: Systematik/IKA (deaktiviert)
+<ul>
+<li class="fragment">Workaround über Systematiklink <a href="https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC%7cSystematicLink%7cAnd%7c2%7cPL.MU">buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC|SystematicLink|AND|2|Notation</a></li>
+<li class="fragment">Vertiefte Suche über Facettenfilter</li>
+</ul></li>
+<li class="fragment">Suche nach U-Sätzen in MBW:
+<ul>
+<li class="fragment">Briefmarkenbeispiel: Michel Übersee - Bd. 9.2 Japan</li>
+<li class="fragment">Workaround auf <a href="https://openm13.wien.gv.at/Mediensuche/Einfache-Suche?search=Michel+%C3%9Cbersee+Japan">QM</a> implementiert (MBW-Titel wird als Reihentitel indexiert)</li>
+</ul></li>
+</ul>
+</section>
+<section id="bekannte-probleme-2" class="slide level3">
+<h3>Bekannte Probleme #2</h3>
+<ul>
+<li class="fragment">Schlagwortfolgen: Verweisformen werden angezeigt</li>
+<li class="fragment">Barrierefreiheit</li>
+</ul>
+</section>
+<section id="geplante-korrekturen" class="slide level3">
+<h3>Geplante Korrekturen</h3>
+<ul>
+<li class="fragment">Stichwortsuche ergänzen um Jahr und Systematik</li>
+<li class="fragment">Systematik-Register</li>
+<li class="fragment">Verlinkung der Standort-Angaben</li>
+<li class="fragment"><strong>!! Metadaten-Korrekturen !!</strong>
+<ul>
+<li class="fragment">Sprachen-Facette (Datenbereinigung)</li>
+<li class="fragment">Sys-/IKA-Facette (aufwändige Datenbereinigung nötig)</li>
+<li class="fragment">Schlagwortregister bereinigen (GND-Verlinkung herstellen)</li>
+</ul></li>
+</ul>
+</section>
+<section id="träume-möglich" class="slide level3">
+<h3>Träume möglich</h3>
+<ul>
+<li class="fragment">Erweiterte Suche selbst aufbauen
+<ul>
+<li class="fragment">Semantische Suche erlauben (<a href="https://nbn-resolving.org/urn:nbn:de:0290-opus4-162355">Siehe</a>)</li>
+</ul></li>
+<li class="fragment">Dynamische Medienvorschläge (Festtage, Jubiläen, aktuelle Ereignisse)</li>
+<li class="fragment">Kuratierte Liste einbetten (zB dynamische Liste an Literaturpreis-TrägerInnen)</li>
+<li class="fragment">Zeitschriftenartikel indexieren</li>
+<li class="fragment"><em>…und?</em></li>
+</ul>
+</section>
+<section id="error-reporting" class="slide level3">
+<h3>Error Reporting</h3>
+<ul>
+<li class="fragment"><a href="https://www.intern.magwien.gv.at/buchwiki/user/bin/view/Tasks/SoWaTHome?Software=Teststellung%20Open&amp;Version=7.0&amp;Alle=ja">Buchwiki SoftwareTracking</a></li>
+<li class="fragment"><a href="https://github.com/bucwien">GitHub</a></li>
+</ul>
+</section>
+<section id="outcomes-besprechung-03.10.2019" class="slide level3">
+<h3>Outcomes Besprechung 03.10.2019</h3>
+<p><a href="https://github.com/buechereien-wien/OPEN_Intro_Slides_201910/issues/8">Dokumentiert</a></p>
+<ul>
+<li class="fragment"><p>Systematik-Notationen in <code>DefaultSearchField</code> kopieren</p></li>
+<li class="fragment"><p>Erscheinungsjahr in <code>DefaultSearchField</code> kopieren</p></li>
+<li class="fragment"><p>Bei <strong>OCLC</strong> melden:</p>
+<ul>
+<li class="fragment">Phrasensuche</li>
+</ul></li>
+</ul>
+</section>
+<section id="frageanregung" class="slide level3">
+<h3>Frage/Anregung</h3>
+<p>Kollaborative Entwicklung von Beispielen oder Unterlagen zur Katalog-Recherche in OPEN</p>
+<ul>
+<li class="fragment">Buchwiki</li>
+<li class="fragment">oder auf GitHub als Slide-Show (wie diese hier) und gleichzeitig als <a href="https://de.wikipedia.org/wiki/Open_Educational_Resources">OER</a> veröffentlichen?</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
