@@ -2,7 +2,7 @@
 author: Christian Erlinger
 title: OPEN
 subtitle:  Der Online-Katalog der Büchereien Wien
-date: 2019-10-08
+date: 2019-10-11
 output:
   revealjs::revealjs_presentation:
     theme: sky
@@ -13,11 +13,11 @@ output:
 ![](open_sysarch.png)
 
 ### Neuerungen
-* Zeitgemäße Web-Technologie (Neuer Server, neue Software)
+* **Zeitgemäßere Web-Technologie** (Neuer Server, neue Software)
   * Responsives Design des Online-Kataloges
-* Integration der Website
-  * OPEN läuft in einem Open-Source CMS und kann somit (tlw.) ergänzt werden.
-* Bessere Integration Inhalte von Drittanbietern:
+* **Integration der Website**
+  * Open-Source CMS und kann/könnte individuell ergänzt werden.
+* Integration der **Inhalte von Drittanbietern**:
   * Verfügbarkeitsanzeige bei E-Medien der Onleihe (theoretisch)
   * Cover-Abbildungen
 
@@ -35,20 +35,37 @@ output:
 ### Bekannte Probleme #1
 
 * Erweiterte Suche: Systematik/IKA (deaktiviert)
+  * Vergleich [StB Frankfurt](https://katalog.stadtbuecherei.frankfurt.de) - Suche Chaos Sys 5.1 und Nat 52
+  * Vergleich [StB Salzburg](https://buch.stadt-salzburg.at/) - Suche nach "Engagement Hessel", Sys Gkk7, Gcx
   * Workaround über Systematiklink [buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC|SystematicLink|AND|2|Notation](https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?query=SC%7cSystematicLink%7cAnd%7c2%7cPL.MU)
   * Vertiefte Suche über Facettenfilter
-* Suche nach U-Sätzen in MBW:
-  * Briefmarkenbeispiel: Michel Übersee - Bd. 9.2 Japan
-  * Workaround auf [QM](https://openm13.wien.gv.at/Mediensuche/Einfache-Suche?search=Michel+%C3%9Cbersee+Japan) implementiert (MBW-Titel wird als Reihentitel indexiert)
+* ~~Suche nach U-Sätzen in MBW~~
+
+
+### Umgesetzte Korrekturen
+
+* Stichwortsuche nach
+  * Systematik
+  * Erscheinungsjahr [Beispiel](https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?search=VS.IX+2019&top=y)
+* Recherche mit Titel des MBW-H-Satzes liefert auch U-Sätze
+  * Bsp: Briefmarkenband - [Michel Übersee Japan](https://buechereien.wien.gv.at/Mediensuche/Einfache-Suche?search=Michel+%C3%9Cbersee+Japan)
+
+### Tricks bei der Recherche
+
+* Trunkierung mit `*` funktioniert auch innerhalb eines Wortes
+* Erweiterte Suche nach Systematik/Erscheinungsjahr im Feld "Stichwort"
 
 ### Bekannte Probleme #2
 
 * Schlagwortfolgen: Verweisformen werden angezeigt
 * Barrierefreiheit
+* Indexierung der Mediensätze geht verloren
+  * Bei Neuanlage eines Mediums überprüfen Sie doch bitte (sofern verfügbare Medien existieren), ob das Medium gefunden wird!
+* Keine Phrasensuche möglich
+* Keine Maskierung möglich
 
 ### Geplante Korrekturen
 
-* Stichwortsuche ergänzen um Jahr und Systematik
 * Systematik-Register
 * Verlinkung der Standort-Angaben
 * **!! Metadaten-Korrekturen !!**
@@ -67,22 +84,6 @@ output:
 
 ### Error Reporting
 
-* [Buchwiki SoftwareTracking](https://www.intern.magwien.gv.at/buchwiki/user/bin/view/Tasks/SoWaTHome?Software=Teststellung%20Open&Version=7.0&Alle=ja)
+* [Buchwiki SoftwareTracking](https://www.intern.magwien.gv.at/buchwiki/user/bin/view/Tasks/SoWaTHome?Software=OPEN&Version=7.0&Alle=ja)
 * [GitHub](https://github.com/bucwien)
 
-### Outcomes Besprechung 03.10.2019
-
-[Dokumentiert](https://github.com/buechereien-wien/OPEN_Intro_Slides_201910/issues/8)
-
-* Systematik-Notationen in `DefaultSearchField` kopieren
-* Erscheinungsjahr in `DefaultSearchField` kopieren
-
-* Bei **OCLC** melden:
-  * Phrasensuche
-
-### Frage/Anregung
-
-Kollaborative Entwicklung von Beispielen oder Unterlagen zur Katalog-Recherche in OPEN
-
-* Buchwiki
-* oder auf GitHub als Slide-Show (wie diese hier) und gleichzeitig als [OER](https://de.wikipedia.org/wiki/Open_Educational_Resources) veröffentlichen?
